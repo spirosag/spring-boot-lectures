@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Spring Boot Lectures</title>
+		<title>Exercise 1</title>
 		<style>
 			body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -72,48 +72,34 @@ code {
 		<textarea id="source">
 class: center, middle, main-title
 
-# Spring Boot Lectures
-
----
-## Prerequisites
-
-1. IntelliJ IDEA
-1. Java 8
-1. ElasticSearch 
-1. ActiveMQ
-1. PostgreSQL
-1. Postman 
-1. GIT
+# Exercise 1
+Purpose: Understand how to setup a spring boot project and how this can be executed. Also understand the power of spring boot starter auto-configuration  and &quot;executable jar&quot; features.
 
 
 ---
-## GIT
-The presentations and code can be found at git: https://github.com/arongas/spring-boot-lectures.git 
+## Description
+You wish to create a simple Library Management System where users can add or find details about resources.  A resource can be of media type book, a magazine or DVD. The data that can be saved into the system are the following:
 
-Useful GIT commands:
-
-
-- Download complete lecture material from GIT: 
-
-`git clone https://github.com/arongas/spring-boot-lectures.git`
+```json
+{
+   "tracking_id": "trucking id added as a sticker on the media resource",
+   "type": "media type (book or magazine or dvd)",
+   "name": "media name, i.e. title of book",
+   "author": "author of book",
+   "abstract": "abstract of media/description",
+   "url": "download url"
+}
+```
+You should create a java web application that allows adding into elastic search such information and allowing this information to be accessed using the tracking id or the type of the book or the name of the book.
 
 
 ---
-class: center, middle, main-title
+## Requirements
+You are requested to use Lombok during development as part of the exercise.
 
-# Lectures
+> Note: You are not requested to implement any free text functionality or implement the rest methods to actually download the resource.
 
----
-## Lecture 1 - Introduction to Spring boot
-Purpose of this lecture is to get a first/quick introduction of what is Spring Boot and its features. 
-
-Two small projects will be created during this course, via Spring Initializr.  The first project will be a hello word web application. Within this project the basic spring boot capabilities will be discussed and explained.
-
-The second project will be made slightly more complex by connecting with Elasticsearch as a database and exposing a domain object over rest. The purpose here will not be to understand spring data or spring data rest but introduce a proposed project structure and explain further auto configuration and spring boot property files.
-
-By the end of the lecture audience is expected to be able to create it own project understand the structure of spring boot and be able to run it.
-
-Lecture 1 also has 1 exercise which should be done after the completion of 1st lecture.
+> Note: The proposed solution uses also Mapstruct to decouple view from domain object. You are advised to also try to use this methodology, but as a second step
 
 
 		</textarea>

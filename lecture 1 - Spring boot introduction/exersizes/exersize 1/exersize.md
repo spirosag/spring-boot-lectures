@@ -21,7 +21,9 @@ You wish to create a simple Library Management System where users can add or fin
 
 You should create a java web application that allows adding into elastic search such information and allowing this information to be accessed using the tracking id or the type of the book or the name of the book.
 
-You are requested to use Lombok during development as part of the exersise.
+## Requirements 
+
+You are requested to use Lombok during development as part of the exercise.
 
 > Note: You are not requested to implement any free text functionality or implement the rest methods to actually download the resource.
 
