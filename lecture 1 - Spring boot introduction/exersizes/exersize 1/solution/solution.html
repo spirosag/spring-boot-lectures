@@ -61,11 +61,9 @@ code {
 	line-height: 0.8em;
 }
 /* Custom */
-.remark-code {
-	display: block;
-	padding: 0.5em;
+remark-slide{
+	background-color: #9bbcf2;
 }
-
 
 blockquote {
   position: relative;
@@ -81,13 +79,37 @@ blockquote:after {
   content: '\201D';
 }
 
-.footer {
-    width: 100%;
-    height: 400px;
-    background-image: url(spring-boot.png);
-    background-size: 100% 100%;
-	background: #272822;
-}​
+.remark-slide-content {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: table-cell;
+    font-size: 22px;
+    padding: 1em 4em 1em 4em;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,  th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
 		</style>
 	</head>
 	<body>
@@ -215,6 +237,5 @@ Open the project with Intellij and setup the support of lombok
 			var slideshow = remark.create();
 		</script>
 		<script></script>
-		<div class="footer"></div>
 	</body>
 </html>
